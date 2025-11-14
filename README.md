@@ -39,9 +39,14 @@ A large-scale document processing pipeline that ingests PDFs, distinguishes nati
 - Python 3.10+
 - Node.js 18+
 - Docker and Docker Compose
-- PostgreSQL 15+
-- Redis
+- PostgreSQL 15+ (via Docker)
+- Redis (via Docker)
 - Tesseract OCR
+
+**Platform Support:**
+- ✅ macOS (see [SETUP_MAC.md](SETUP_MAC.md) for Mac-specific instructions)
+- ✅ Linux
+- ✅ Windows (see [SETUP.md](SETUP.md))
 
 ## Quick Start
 
@@ -309,12 +314,14 @@ Install Tesseract:
 # Ubuntu/Debian
 sudo apt-get install tesseract-ocr
 
-# macOS
-brew install tesseract
+# macOS (using Homebrew)
+brew install tesseract tesseract-lang
 
 # Windows
 # Download from: https://github.com/UB-Mannheim/tesseract/wiki
 ```
+
+**For Mac users:** See [SETUP_MAC.md](SETUP_MAC.md) for complete Mac setup instructions.
 
 ### LayoutParser model download
 
